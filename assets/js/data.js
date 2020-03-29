@@ -123,9 +123,7 @@
                         }
                         else
                         //pushpa
-                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted || 
-                           respdata[ans_obj.current_section][ans_obj.current_index].select_answer == null ||
-                            !respdata[ans_obj.current_section][ans_obj.current_index].user_attempted){
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted){
 
                             // let currentWidth = parseFloat($('#progressBar').css('width')) / 1.95;
                             // let threshold = 100 / $("fieldset").length;
