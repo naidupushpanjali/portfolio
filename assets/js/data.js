@@ -266,7 +266,7 @@
                                 response.current_section="options_group";
                             }
                             else{
-                                window.location.href = "http://foxybrain.foxymoron.tv/sharekhan/thankyou.html";
+                                window.location.href = "https://naidupushpanjali.github.io/portfolio/thankyou.html";
                                 //http://foxybrain.foxymoron.tv/sharekhan/register.html
                             }
                             question_7_completed = false;
@@ -279,7 +279,7 @@
                             //Submit final JSON
                             //Show thank you page.
                             sendData(respdata);
-                            window.location.href = "http://foxybrain.foxymoron.tv/sharekhan/thankyou.html";
+                            window.location.href = "https://naidupushpanjali.github.io/portfolio/thankyou.html";
                         }
                     }
                     else{
