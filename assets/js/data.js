@@ -116,12 +116,12 @@
                         event_click_next2 = true;
                         $(this).data('clicked', true);
 
-                        // if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1)
-                        // {
-                        //     $('#input_9_2').css('display','block');
-                        //     alertBox(respdata["common_question"]["personal_data"][0].user_answer);
-                        // }
-                        //else
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1)
+                        {
+                            $('#input_9_2').css('display','block');
+                            alertBox(respdata["common_question"]["personal_data"][0].user_answer);
+                        }
+                        else
                         //pushpa
                         if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted || 
                            respdata[ans_obj.current_section][ans_obj.current_index].select_answer == null ||
@@ -155,22 +155,22 @@
                                 }
                             }
 
-                            // if($('input[id=option_10k]').is(':checked') && respdata[ans_obj.current_section][ans_obj.current_index].id == 10){
-                            //     var album_text = [];
-                            //     $('[id^="text1"]').each(function() {
-                            //         var value = $(this).val();
-                            //         if (value) {
-                            //             album_text.push(value);
-                            //         }
-                            //     });
-                            //         if(album_text.length == ""){
-                            //             input10kapassed = false;
-                            //             $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_other').css('display','block');
-                            //         }
-                            //         else{
-                            //             input10kapassed = true;
-                            //         }
-                            // }
+                            if($('input[id=option_10k]').is(':checked') && respdata[ans_obj.current_section][ans_obj.current_index].id == 10){
+                                var album_text = [];
+                                $('[id^="text1"]').each(function() {
+                                    var value = $(this).val();
+                                    if (value) {
+                                        album_text.push(value);
+                                    }
+                                });
+                                    if(album_text.length == ""){
+                                        input10kapassed = false;
+                                        $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_other').css('display','block');
+                                    }
+                                    else{
+                                        input10kapassed = true;
+                                    }
+                            }
 
                             if(input10kapassed || respdata[ans_obj.current_section][ans_obj.current_index].select_answer != "option_10k"){
                                 question_no += 1;
@@ -180,17 +180,17 @@
                                 current_index = next_question.current_index;
                             }
                         } 
-                        // else {
-                        //     // if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false){
-                        //         if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9){
-                        //             $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_2').css('display','block');
-                        //         }
-                        //         // else
-                        //         // {
-                        //         //     $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id).css('display','block');
-                        //         // }
-                        //     // }
-                        // } 
+                        else {
+                            if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false){
+                                if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9){
+                                    $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_2').css('display','block');
+                                }
+                                else
+                                {
+                                    $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id).css('display','block');
+                                }
+                            }
+                        } 
                         //pushpa
                     }
                 });
@@ -449,7 +449,7 @@
                             selected_answer = $radio.attr('id');
                             if (selected_answer != null){
                                 respdata[ans_obj.current_section][ans_obj.current_index].select_answer = selected_answer;
-                                // respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
+                                respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
                                 respdata[ans_obj.current_section][ans_obj.current_index].textBox_input_value = null;
                                 if(selected_answer == "option_10k" && respdata[ans_obj.current_section][ans_obj.current_index].id == 10){
                                     var textLength = $('[id^="text1"]').length;
@@ -476,7 +476,7 @@
                 
                 respdata[ans_obj.current_section][ans_obj.current_index].select_answer = selected_answer;
                 if (selected_answer.length != 0){
-                    // respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
+                    respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
                     if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && 
                         respdata[ans_obj.current_section][ans_obj.current_index].select_answer.length < 2){
                         minimum_2_selected = false;
@@ -491,7 +491,7 @@
             const onTextareaEnter = (ans_obj) => {
             var selected_answer = $.trim($("textarea").val());
             respdata[ans_obj.current_section][ans_obj.current_index].select_answer = selected_answer;
-            // respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
+            respdata[ans_obj.current_section][ans_obj.current_index].user_attempted = true;
             }
 
             function checkInput9(selected_answer){
