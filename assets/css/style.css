@@ -107,6 +107,15 @@
   display: none;
 }
 
+.next3 {
+  display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .next3 {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .btn-register-mobile {
     position: fixed;

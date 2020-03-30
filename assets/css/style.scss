@@ -78,6 +78,13 @@ body {
     display: none;
 }
 
+.next3 {
+    display: block;
+    @include screen(small) {
+        display: none;
+    }
+}
+
 @include screen(small) {
     .btn-register-mobile {
         // width: 100%;
