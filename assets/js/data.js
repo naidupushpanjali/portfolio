@@ -116,14 +116,24 @@
                         event_click_next2 = true;
                         $(this).data('clicked', true);
 
-                        if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1)
+                        $(".next3").click(function(){
+                            $('.next3').data('clicked', true);
+                            $('.next2').data('clicked', false);
+                        });
+
+                        $(".next2").click(function(){
+                            $('.next2').data('clicked', true);
+                            $('.next3').data('clicked', false);
+                        });
+
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1 && !$('.next3').data('clicked'))
                         {
                             $('#input_9_2').css('display','block');
                             alertBox(respdata["common_question"]["personal_data"][0].user_answer);
                         }
                         else
                         //pushpa
-                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted){
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted || $('.next3').data('clicked')){
 
                             // let currentWidth = parseFloat($('#progressBar').css('width')) / 1.95;
                             // let threshold = 100 / $("fieldset").length;
@@ -179,7 +189,7 @@
                             }
                         } 
                         else {
-                            if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false){
+                            if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false && !$('.next3').data('clicked')){
                                 if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9){
                                     $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_2').css('display','block');
                                 }
@@ -278,7 +288,7 @@
                             respdata.agree_to_invest_with_sharekhan = true;
                             //Submit final JSON
                             //Show thank you page.
-                            sendData(respdata);
+                            // sendData(respdata);
                             window.location.href = "https://naidupushpanjali.github.io/portfolio/thankyou.html";
                         }
                     }
@@ -421,7 +431,7 @@
                             $(`#question_${respdata[response.current_section][response.current_index].id}`).removeClass('transitBack').addClass('active_question').show();
                         }, 300);
                     }, 100);
-                    sendData(respdata);
+                    // sendData(respdata);
                     return response;
             }
             
