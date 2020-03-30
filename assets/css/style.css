@@ -82,7 +82,7 @@
 }
 @media only screen and (min-width: 375px) and (max-width: 667px) {
   .header .logo-image {
-    padding-top: 50px;
+    padding-top: 25px;
   }
 }
 .header .header-border {
@@ -256,7 +256,6 @@
   #banner h4 {
     padding: 1rem 0rem 0rem 1rem;
     font-size: 12px;
-    width: 183.6px;
   }
 }
 @media only screen and (min-width: 375px) and (max-width: 667px) {
@@ -277,7 +276,6 @@
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #banner h3 {
-    width: 193px;
     height: 62px;
     font-size: 12px;
     line-height: 1.43;
@@ -591,7 +589,8 @@
   left: 0;
 }
 
-.back, .front {
+.back,
+.front {
   -webkit-transform-style: preserve-3d;
 }
 
@@ -2004,7 +2003,8 @@ h1 {
 }
 
 .validate,
-.validate2, .validate10ka {
+.validate2,
+.validate10ka {
   display: none;
   list-style: none;
   transition: 0.2s ease all;
@@ -2343,7 +2343,8 @@ h5 {
   }
 }
 
-.modal-lg, .modal-xl {
+.modal-lg,
+.modal-xl {
   max-width: 980px;
 }
 
@@ -2541,7 +2542,8 @@ h5 {
   transform: rotate(45deg);
 }
 
-#t_c, #a_i {
+#t_c,
+#a_i {
   font-size: 16px;
 }
 
@@ -2648,7 +2650,8 @@ h5 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer_content p, ul {
+  .footer_content p,
+ul {
     font-size: 13px;
     word-spacing: 0px;
   }
@@ -2877,11 +2880,13 @@ table td a:hover {
     border-right: none;
   }
 
-  .warranty-year, .discount-brokerage {
+  .warranty-year,
+.discount-brokerage {
     text-align: center;
   }
 
-  #banner .year-warranty, #banner .Group-717 {
+  #banner .year-warranty,
+#banner .Group-717 {
     margin-left: 0rem;
   }
 
@@ -2930,7 +2935,8 @@ table td a:hover {
     text-align: center;
   }
 
-  #steps-section .one, #steps-section .two {
+  #steps-section .one,
+#steps-section .two {
     width: 200px;
     height: 200px;
     margin-left: 0rem;
@@ -3078,11 +3084,13 @@ table td a:hover {
     border-right: none;
   }
 
-  .warranty-year, .discount-brokerage {
+  .warranty-year,
+.discount-brokerage {
     text-align: center;
   }
 
-  #banner .year-warranty, #banner .Group-717 {
+  #banner .year-warranty,
+#banner .Group-717 {
     margin-left: 0rem;
   }
 
@@ -3131,7 +3139,8 @@ table td a:hover {
     text-align: center;
   }
 
-  #steps-section .one, #steps-section .two {
+  #steps-section .one,
+#steps-section .two {
     width: 200px;
     height: 200px;
     margin-left: 0rem;
@@ -3209,8 +3218,15 @@ table td a:hover {
     padding-left: 0px;
   }
 
-  #banner .warranty-year, #banner .discount-brokerage, .reviews-block, .single-highlighted-text-mobile, .step-section,
-.bullet-numbering-image, .align_center, .register_footer, .footer_section {
+  #banner .warranty-year,
+#banner .discount-brokerage,
+.reviews-block,
+.single-highlighted-text-mobile,
+.step-section,
+.bullet-numbering-image,
+.align_center,
+.register_footer,
+.footer_section {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -3219,7 +3235,8 @@ table td a:hover {
     padding-top: 5rem;
   }
 
-  #steps-section .step-2, #steps-section .step-3 {
+  #steps-section .step-2,
+#steps-section .step-3 {
     padding-top: 5rem;
   }
 
@@ -3294,11 +3311,13 @@ table td a:hover {
     border-right: none;
   }
 
-  .warranty-year, .discount-brokerage {
+  .warranty-year,
+.discount-brokerage {
     text-align: center;
   }
 
-  #banner .year-warranty, #banner .Group-717 {
+  #banner .year-warranty,
+#banner .Group-717 {
     margin-left: 0rem;
   }
 
@@ -3347,7 +3366,8 @@ table td a:hover {
     text-align: center;
   }
 
-  #steps-section .one, #steps-section .two {
+  #steps-section .one,
+#steps-section .two {
     width: 200px;
     height: 200px;
     margin-left: 0rem;
@@ -3425,8 +3445,15 @@ table td a:hover {
     padding-left: 0px;
   }
 
-  #banner .warranty-year, #banner .discount-brokerage, .reviews-block, .single-highlighted-text-mobile, .step-section,
-.bullet-numbering-image, .align_center, .register_footer, .footer_section {
+  #banner .warranty-year,
+#banner .discount-brokerage,
+.reviews-block,
+.single-highlighted-text-mobile,
+.step-section,
+.bullet-numbering-image,
+.align_center,
+.register_footer,
+.footer_section {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -3435,7 +3462,8 @@ table td a:hover {
     padding-top: 5rem;
   }
 
-  #steps-section .step-2, #steps-section .step-3 {
+  #steps-section .step-2,
+#steps-section .step-3 {
     padding-top: 5rem;
   }
 }
@@ -3515,11 +3543,13 @@ table td a:hover {
     border-right: none;
   }
 
-  .warranty-year, .discount-brokerage {
+  .warranty-year,
+.discount-brokerage {
     text-align: center;
   }
 
-  #banner .year-warranty, #banner .Group-717 {
+  #banner .year-warranty,
+#banner .Group-717 {
     margin-left: 0rem;
   }
 
@@ -3568,7 +3598,8 @@ table td a:hover {
     text-align: center;
   }
 
-  #steps-section .one, #steps-section .two {
+  #steps-section .one,
+#steps-section .two {
     width: 200px;
     height: 200px;
     margin-left: 0rem;
@@ -3641,8 +3672,15 @@ table td a:hover {
     padding-left: 0px;
   }
 
-  #banner .warranty-year, #banner .discount-brokerage, .reviews-block, .single-highlighted-text-mobile, .step-section,
-.bullet-numbering-image, .align_center, .register_footer, .footer_section {
+  #banner .warranty-year,
+#banner .discount-brokerage,
+.reviews-block,
+.single-highlighted-text-mobile,
+.step-section,
+.bullet-numbering-image,
+.align_center,
+.register_footer,
+.footer_section {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -3651,7 +3689,8 @@ table td a:hover {
     padding-top: 5rem;
   }
 
-  #steps-section .step-2, #steps-section .step-3 {
+  #steps-section .step-2,
+#steps-section .step-3 {
     padding-top: 5rem;
   }
 }
@@ -3685,9 +3724,9 @@ table td a:hover {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .warranty-year, .discount-brokerage {
+  .warranty-year,
+.discount-brokerage {
     text-align: left;
-    justify-content: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -3696,7 +3735,8 @@ table td a:hover {
     height: 300px;
   }
 
-  #steps-section .step-2 h3, #steps-section .step-2 p {
+  #steps-section .step-2 h3,
+#steps-section .step-2 p {
     margin-left: 0rem;
   }
 
@@ -3780,7 +3820,9 @@ table td a:hover {
     font-size: 17px;
   }
 
-  #steps-section .step-2 h3, #steps-section .step-2 p, #steps-section .bulletpoint-2 {
+  #steps-section .step-2 h3,
+#steps-section .step-2 p,
+#steps-section .bulletpoint-2 {
     margin-left: 0rem;
   }
 
@@ -3873,7 +3915,9 @@ table td a:hover {
     font-size: 17px;
   }
 
-  #steps-section .step-2 h3, #steps-section .step-2 p, #steps-section .bulletpoint-2 {
+  #steps-section .step-2 h3,
+#steps-section .step-2 p,
+#steps-section .bulletpoint-2 {
     margin-left: 0rem;
   }
 
