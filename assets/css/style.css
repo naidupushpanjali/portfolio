@@ -1835,7 +1835,7 @@ h1 {
 }
 
 .progress_container {
-  bottom: 1rem;
+  bottom: 3rem;
   left: 8rem;
   position: absolute;
   display: inline-block;
