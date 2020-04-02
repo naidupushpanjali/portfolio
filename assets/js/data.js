@@ -111,29 +111,35 @@
 
                     // $('#progress_bar').prepend('<div class="progressContainer"><div id="progressBar"></div></div>').insertAfter('.reg_form_next');
                 } 
+                else if(event.currentTarget.name === "next3"){
+                        question_no += 1;
+                        $('.question_no').html('<span>Question-'+question_no+'</span>');
+
+                        loadNextQuestion(ans_obj);
+                }
                 else {
                     // // $('#registrationForm div.section_2').addClass('transitIn');
                         event_click_next2 = true;
                         $(this).data('clicked', true);
 
-                        $(".next3").click(function(){
-                            $('.next3').data('clicked', true);
-                            $('.next2').data('clicked', false);
-                        });
+                        // $(".next3").click(function(){
+                        //     $('.next3').data('clicked', true);
+                        //     $('.next2').data('clicked', false);
+                        // });
 
-                        $(".next2").click(function(){
-                            $('.next2').data('clicked', true);
-                            $('.next3').data('clicked', false);
-                        });
+                        // $(".next2").click(function(){
+                        //     $('.next2').data('clicked', true);
+                        //     $('.next3').data('clicked', false);
+                        // });
 
-                        if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1 && !$('.next3').data('clicked'))
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9 && $('input[name="input_9"]:checked').length < 1)
                         {
                             $('#input_9_2').css('display','block');
                             alertBox(respdata["common_question"]["personal_data"][0].user_answer);
                         }
                         else
                         //pushpa
-                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted || $('.next3').data('clicked')){
+                        if(respdata[ans_obj.current_section][ans_obj.current_index].user_attempted){
 
                             // let currentWidth = parseFloat($('#progressBar').css('width')) / 1.95;
                             // let threshold = 100 / $("fieldset").length;
@@ -189,7 +195,7 @@
                             }
                         } 
                         else {
-                            if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false && !$('.next3').data('clicked')){
+                            if ($('input:radio[name=input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+']').is(':checked') == false){
                                 if(respdata[ans_obj.current_section][ans_obj.current_index].id == 9){
                                     $('#input_'+respdata[ans_obj.current_section][ans_obj.current_index].id+'_2').css('display','block');
                                 }

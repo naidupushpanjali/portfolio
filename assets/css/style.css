@@ -972,7 +972,7 @@
     display: block;
   }
 }
-@media only screen and (min-width: 320px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
   #footer .footer-col {
     margin-left: 0rem;
   }

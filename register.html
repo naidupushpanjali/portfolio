@@ -144,11 +144,12 @@
                                     <!-- End Fieldset 1 -->
                                     <!-- <button type="submit" class="btn btn-primary button-submit-desktop next">Next</button> -->
                                      <div class="form-navigation"> 
+                                         <div id="html_element"></div>
                                         <button type="button" id="next" name="next1" class="next btn  button-submit-desktop reg_form_next" 
                                         data-next="traderorinvestor" data-section="common_question" data-index="personal_data" tabindex="0">Next</button>
                                      </div> 
                                      <!-- <span class="progress_questions"></span> -->
-                                     <p class="disclaimer">*Sharekhan customers do not qualify</p>
+                                     <!-- <p class="disclaimer">*Sharekhan customers do not qualify</p> -->
                                 </fieldset>
                             </div>
                         </form>
@@ -275,7 +276,7 @@
                 data-section="{{current_section}}" data-index="{{current_index}}" 
                 data-input_id="{{id}}" data-input_type="{{question_type}}" tabindex="0">Next</button>
 
-                <button type="button" id="{{id}}" name="next2" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
+                <button type="button" id="{{id}}" name="next3" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
                 data-section="{{current_section}}" data-index="{{current_index}}" 
                 data-input_id="{{id}}" data-input_type="{{question_type}}" tabindex="0">Skip</button>
         </fieldset>
@@ -355,7 +356,7 @@
                     <button type="button" id="{{id}}" name="next2" class="next btn  button-submit-desktop reg_form_next next2" data-next="{{next}}" data-section="{{current_section}}" data-index="{{current_index}}" data-input_id="{{id}}" data-input_type="{{question_type}}" 
                     tabindex="0">Next</button>
 
-                    <button type="button" id="{{id}}" name="next2" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
+                    <button type="button" id="{{id}}" name="next3" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
                     data-section="{{current_section}}" data-index="{{current_index}}" 
                     data-input_id="{{id}}" data-input_type="{{question_type}}" tabindex="0">Skip</button>
                 <!-- </div> -->
@@ -390,7 +391,7 @@
                 <button type="button" id="{{id}}" name="next2" class="next2 next btn  button-submit-desktop reg_form_next" data-next="{{next}}" data-section="{{current_section}}" data-index="{{current_index}}" data-input_id="{{id}}" data-input_type="{{question_type}}"
                 tabindex="0">Next</button>
 
-                <button type="button" id="{{id}}" name="next2" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
+                <button type="button" id="{{id}}" name="next3" class="next2 next3 next btn  button-submit-desktop reg_form_next" data-next="{{next}}"
                 data-section="{{current_section}}" data-index="{{current_index}}" 
                 data-input_id="{{id}}" data-input_type="{{question_type}}" tabindex="0">Skip</button>
         </fieldset>
@@ -528,6 +529,16 @@
     //         $(".progress-bar").css("width",percent+"%")
     //     }
     // });
+</script>
+<script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LcHZ-AUAAAAAJE5LxKhmw7eYhCwEvYCEKI0LDsp'
+        });
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
     </script>
 </body>
 
